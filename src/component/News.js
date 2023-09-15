@@ -54,7 +54,7 @@ props.setProgress(100);
         >
             <div className='container'>
          <div className="row" >
-        {articles.map((element)=>{
+        {articles?.map((element)=>{
           return<div className="col-md-4" key={element.url}>
         <NewsItem  title={element.title} descrption={element.description} imageUrl={element.urlToImage} newsurl={element.url} author={element.author} date={element.publishedAt} source={element.source.name}/>
         </div>
