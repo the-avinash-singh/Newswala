@@ -10,7 +10,7 @@ import { useState } from 'react';
 export default function App() {
 const [progress,setProgress]=useState(0);
 const page=10;
-const apikey='e14454bc3d34401b9ba6ecb2bbfa20a9'
+const apikey=process.env.REACT_APP_NEWS_API
     return (
       <div>
         <Router>
