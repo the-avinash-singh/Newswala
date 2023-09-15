@@ -47,7 +47,7 @@ props.setProgress(100);
         <h1 className='text-center' style={{ marginBottom:"35px",marginTop:"90px"}}>NewsWala - Top for {capital(props.category)} category </h1>
         {loading&&<Spinner/>}
         <InfiniteScroll
-          dataLength={articles.length}
+          dataLength={articles?.length}
           next={fetchMoreData}
           hasMore={articles.length!==totalResults}
           loader={<Spinner/>}
